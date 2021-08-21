@@ -1,8 +1,29 @@
 <template>
   <div class="container">
+    <router-view />
+    <router-link to="/input-bindings">Input Bindings</router-link>
+    <div>
+
+      <div> 
+        <router-link to="/checkbox">Check Box</router-link>
+      </div>
+
+      <div> 
+        <router-link to="/class-and-style-binding">Class And Style Binding</router-link>
+      </div>
+
+      <div> 
+        <router-link to="/ternery-operation">Ternery Operation</router-link>
+      </div>
+
+       <div> 
+        <router-link to="/inline-edit">Inline Edit</router-link>
+      </div>
+
     <b-button variant="outline-primary" @click="isEditProfile = true">
       Edit
     </b-button>
+    </div>
     <!-- <Sidebar 
            :openSidebar = "isEditProfile"
            @toggleSidebars="toggleSidebar()"
@@ -41,6 +62,7 @@
 <script>
 import Sidebar from "./Sidebar.vue";
 import propAndEmit from "./propsAndEmit.vue";
+
 export default {
   components: {
     Sidebar,
