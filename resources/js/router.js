@@ -6,6 +6,7 @@ import CheckBox from "./components/CheckBox";
 import ClassAndStyleBinding from "./components/ClassAndStyleBinding";
 import TerneryOperation from "./components/TerneryOperation";
 import InlineEdit from "./components/InlineEdit";
+import PivotTable from "./components/PivotTable"
 
 Vue.use(VueRouter);
 
@@ -50,6 +51,12 @@ const routes = [
         path: "/inline-edit",
         name: "InlineEdit",
         component: InlineEdit
+    },
+
+    {
+        path: "/pivot-table",
+        name: "PivotTable",
+        component: PivotTable
     }
 ];
 

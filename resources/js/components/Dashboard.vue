@@ -20,6 +20,10 @@
         <router-link to="/inline-edit">Inline Edit</router-link>
       </div>
 
+      <div> 
+        <router-link to="/pivot-table">Pivot Table</router-link>
+      </div>
+
     <b-button variant="outline-primary" @click="isEditProfile = true">
       Edit
     </b-button>
